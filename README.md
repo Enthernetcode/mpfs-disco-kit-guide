@@ -35,6 +35,24 @@ void blink_led() {
     }
 }
 ```
+## Setup
+
+### Cloning the Repository
+
+1. **Clone the Repository:**
+   - Open your terminal or command prompt.
+   - Use the following command to clone the repository:
+
+     ```
+     git clone https://github.com/enthernetcode/mpfs-disco-kit-guide
+     ```
+
+2. **Navigate to the Directory:**
+   - Change directory to the cloned repository:
+
+     ```
+     cd mpfs-disco-kit-guide
+     ```
 ## Project Ideas
 
 1. **Smart Home Controller:** Develop a system to control lights, temperature, and security.
