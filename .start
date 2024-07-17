@@ -12,7 +12,6 @@
 #define CYAN "\033[36m"
 #define WHITE "\033[37m"
 
-// Function to print text with a specific color and delay
 void slow_print(const char *text, unsigned int delay, const char *color) {
     while (*text) {
         printf("%s%c", color, *text);
@@ -28,7 +27,6 @@ void pause_program() {
     getchar();
 }
 
-// Function to display basic information about the MPFS-DISCO-KIT
 void displayInformation() {
     slow_print("Welcome to the MPFS-DISCO-KIT Comprehensive Guide!\n", 50, BLUE);
     slow_print("The MPFS-DISCO-KIT is a development platform from Microchip Technology designed to explore and develop with the PolarFire SoC FPGA architecture.\n\n", 50, BLUE);
@@ -42,7 +40,6 @@ void displayInformation() {
     slow_print("6. Software and Toolchain Support: The kit is supported by comprehensive software tools and development environments, including support for various operating systems and extensive documentation.\n", 50, BLUE);
 }
 
-// Function to quiz the user on the basic information
 void quizUser() {
     int answer;
 
@@ -68,7 +65,6 @@ void quizUser() {
     }
 }
 
-// Function to display advantages of the MPFS-DISCO-KIT
 void displayAdvantages() {
     slow_print("\nAdvantages:\n", 50, YELLOW);
     slow_print("1. Customization: The combination of a programmable RISC-V core and FPGA fabric offers significant flexibility for customized designs.\n", 50, YELLOW);
@@ -76,7 +72,6 @@ void displayAdvantages() {
     slow_print("3. Scalability: Suitable for a range of applications from simple embedded systems to complex, high-performance computing tasks.\n", 50, YELLOW);
 }
 
-// Function to quiz the user on the advantages and use cases
 void quizUserOnAdvantagesAndUseCases() {
     int answer;
 
@@ -102,7 +97,6 @@ void quizUserOnAdvantagesAndUseCases() {
     }
 }
 
-// Function to display potential use cases of the MPFS-DISCO-KIT
 void displayUseCases() {
     slow_print("\nUse Cases:\n", 50, MAGENTA);
     slow_print("1. Embedded Systems: Ideal for creating embedded systems with specific performance and power requirements.\n", 50, MAGENTA);
@@ -111,7 +105,6 @@ void displayUseCases() {
     slow_print("4. Prototyping and Development: Useful for rapid prototyping and development of custom hardware solutions.\n", 50, MAGENTA);
 }
 
-// Function to display practical implementation guide
 void displayImplementationGuide() {
     slow_print("\nPractical Implementation Guide:\n", 50, RED);
 
@@ -135,7 +128,6 @@ void displayImplementationGuide() {
     slow_print("   - Integrate and test these modules within your project to enhance functionality.\n", 50, RED);
 }
 
-// Function to display coding practice section
 void displayCodingPractice() {
     slow_print("\nCoding Practice Section:\n", 50, WHITE);
 
@@ -184,7 +176,7 @@ void displayCodingPractice() {
 }
 
 int main() {
-    srand(time(NULL));  // Seed the random number generator
+    srand(time(NULL)); 
 
     displayInformation();
     pause_program();
